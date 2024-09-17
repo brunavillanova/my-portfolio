@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography, styled } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.jpg"
+import Avatar from "../../../../assets/images/avatar.jpg";
 import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
@@ -24,7 +24,7 @@ const Hero = () => {
     const StyledImg = styled("img")(({ theme }: { theme: Theme }) => ({
         width: "75%",
         borderRadius: "50%",
-        border: `1px solid ${theme.palette.primary.contrastText}`
+        border: `1px solid ${theme.palette.primary.contrastText}`,
     }));
 
     return (
@@ -47,7 +47,8 @@ const Hero = () => {
                             <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm a Software Engineer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <StyledButton>
+                                    {/* Botão para Download do CV */}
+                                    <StyledButton downloadLink="/Bruna_Villanova_currículo.pdf">
                                         <DownloadIcon />
                                         <Typography>
                                             Download CV
@@ -55,12 +56,15 @@ const Hero = () => {
                                     </StyledButton>
                                 </Grid>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <StyledButton>
-                                        <MailOutlineIcon />
-                                        <Typography>
-                                            Contact me
-                                        </Typography>
-                                    </StyledButton>
+                                    {/* Botão de Contato com bruna */}
+                                    <a href="mailto:brunnavillanova@gmail.com" style={{ textDecoration: 'none' }}>
+                                        <StyledButton>
+                                            <MailOutlineIcon />
+                                            <Typography>
+                                                Contact me
+                                            </Typography>
+                                        </StyledButton>
+                                    </a>
                                 </Grid>
                             </Grid>
                         </Grid>
