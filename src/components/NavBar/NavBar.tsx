@@ -190,7 +190,7 @@ const NavBar = () => {
                         </Box>
                         <Box display="flex" flexDirection="column" alignItems="center">
                             <FaCode size={40} />
-                            <Typography variant="body1">Programming</Typography>
+                            <Typography variant="body1">TypeScript</Typography>
                         </Box>
                     </Box>
                     <Separator />
