@@ -5,8 +5,16 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
 import { Theme } from '@mui/material/styles'; // Importar o tipo Theme
+import { useSpring, animated } from '@react-spring/web'; // Importar react-spring
 
 const Hero = () => {
+    // Definindo animação de deslizamento com react-spring
+    const props = useSpring({
+        transform: 'translateY(0%)',
+        opacity: 1,
+        from: { transform: 'translateY(-50%)', opacity: 0 },
+        config: { duration: 1000 } // Ajuste a duração conforme necessário
+    });
 
     const StyledHero = styled("div")(({ theme }: { theme: Theme }) => ({
         backgroundColor: theme.palette.primary.main,
@@ -44,7 +52,11 @@ const Hero = () => {
                         </Grid>
                         <Grid item xs={12} md={7}>
                             <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Bruna Villanova</Typography>
-                            <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm a Software Engineer</Typography>
+                            <animated.div style={props}>
+                                <Typography color="primary.contrastText" variant="h2" textAlign="center">
+                                    I'm a Software Engineer
+                                </Typography>
+                            </animated.div>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                     {/* Botão para Download do CV */}
