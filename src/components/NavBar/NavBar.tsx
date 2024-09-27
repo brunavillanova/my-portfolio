@@ -295,7 +295,7 @@ const NavBar = () => {
                                  exibindo caixas delimitadoras ao redor das detecções e mostrando a taxa de quadros por segundo (FPS). 
                                     
                                     <br />
-                                    <a href="https://github.com/brunavillanova/Pokedex" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                                    <a href="https://github.com/brunavillanova/sistema-vigilancia" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
                                     <br />
                                    
                                 </Typography>
