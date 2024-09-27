@@ -5,6 +5,7 @@ import project2Image from '../../assets/images/preview.png';
 import project3Image from '../../assets/images/arteimpressa.png';
 import project4Image from '../../assets/images/hamburgueria.png';
 import project5Image from '../../assets/images/software.jpg';
+import project6Image from '../../assets/images/pokedex.png';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaPython, FaGit, FaDocker, FaReact, FaCode, FaWhatsapp } from 'react-icons/fa';
 
 
@@ -261,6 +262,22 @@ const NavBar = () => {
                                     <a href="https://github.com/brunavillanova/cardapio" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
                                     <br />
                                     <a href="https://brubuerguer.netlify.app" target="_blank" rel="noopener noreferrer">Acessar Projeto / Access Project</a>
+                                </Typography>
+                            </Box>
+                        </Grid>
+                         {/* Projeto 6 */}
+                         <Grid item xs={12} sm={6} md={4}>
+                            <Box p={2} bgcolor="white" borderRadius="12px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.3)">
+                                <ProjectImage src={project6Image} alt="Projeto 4" />
+                                <Typography variant="h6" mt={2}>Pokédex</Typography>
+                                <Typography variant="body2">
+                                Este projeto é uma Pokédex interativa, desenvolvida com HTML, CSS e JavaScript. Ele permite que os usuários pesquisem Pokémons 
+                                pelo nome ou número e naveguem entre diferentes Pokémons usando botões de navegação. As informações são obtidas
+                                 da PokéAPI. O design é responsivo, garantindo uma boa experiência tanto em dispositivos móveis quanto em desktops.
+                                    <br />
+                                    <a href="https://github.com/brunavillanova/Pokedex" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                                    <br />
+                                    <a href="https://pokemon-pk.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Projeto / Access Project</a>
                                 </Typography>
                             </Box>
                         </Grid>
