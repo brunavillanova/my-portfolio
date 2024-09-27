@@ -6,6 +6,7 @@ import project3Image from '../../assets/images/arteimpressa.png';
 import project4Image from '../../assets/images/hamburgueria.png';
 import project5Image from '../../assets/images/software.jpg';
 import project6Image from '../../assets/images/pokedex.png';
+import project7Video from '../../assets/video/vigilancia.mp4';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaPython, FaGit, FaDocker, FaReact, FaCode, FaWhatsapp } from 'react-icons/fa';
 
 
@@ -281,6 +282,26 @@ const NavBar = () => {
                                 </Typography>
                             </Box>
                         </Grid>
+
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box p={2} bgcolor="white" borderRadius="12px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.3)">
+                                <video width="100%" controls>
+                                    <source src={project7Video} type="video/mp4" />
+                                    Seu navegador não suporta a tag de vídeo.
+                                </video>
+                                <Typography variant="h6" mt={2}> Sistema de Vigilância</Typography>
+                                <Typography variant="body2">
+                                Este projeto utiliza o modelo YOLOv8 para detectar pessoas em um vídeo. O sistema processa os frames do vídeo em tempo real,
+                                 exibindo caixas delimitadoras ao redor das detecções e mostrando a taxa de quadros por segundo (FPS). 
+                                    
+                                    <br />
+                                    <a href="https://github.com/brunavillanova/Pokedex" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                                    <br />
+                                   
+                                </Typography>
+                            </Box>
+                        </Grid>
+
                     </Grid>
                 </Container>
             </Section>
