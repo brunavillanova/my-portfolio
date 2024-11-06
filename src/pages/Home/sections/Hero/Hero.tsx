@@ -60,7 +60,7 @@ const Hero = () => {
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                     {/* Botão para Download do CV */}
-                                    <StyledButton downloadLink="/Bruna_Villanova_currículo.pdf">
+                                    <StyledButton downloadLink="/Currículo Bruna Villanova-3.pdf">
                                         <DownloadIcon />
                                         <Typography>
                                             Download CV
